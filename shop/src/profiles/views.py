@@ -7,10 +7,21 @@ def home(request):
     template = 'home.html'
     return render(request, template, context)
 
-def about(request):
+def wino(request):
     context = {}
-    template = 'about.html'
+    template = 'wino.html'
     return render(request, template, context)
+
+def featured(request):
+    context = {}
+    template = 'featured.html'
+    return render(request, template, context)
+
+def shop(request):
+    context = {}
+    template = 'shop.html'
+    return render(request, template, context)
+
 
 @login_required
 def userProfile(request):
